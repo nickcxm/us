@@ -4,11 +4,11 @@
       <!--<x-header style="background-color:#9acdeb;" :left-options="{showBack: false}">橙子之家</x-header>-->
       <div  class="container">
         <div class="backgroundImageFilter"></div>
-        <h3 style="color: blanchedalmond">CXM & CH♥</h3>
+        <h2 style="color: blanchedalmond">CXM & CH♥</h2>
         <!--<h3 style="color: blanchedalmond">程旭敏 & 程慧</h3>-->
       </div>
       <marquee>
-        <marquee-item v-for="i in asyncCount" :key="i" @click.native="onClick(i)" class="align-middle">hello world {{i}}</marquee-item>
+        <marquee-item v-for="i in tips" :key="i" @click.native="onClick(i)" class="align-middle">{{i.msg}}</marquee-item>
       </marquee>
       <divider>距离一周年还有:</divider>
       <div>
@@ -110,22 +110,55 @@ export default {
           // http://javascript.info/tutorial/coordinates
         }
       },
+      //轮播列表
+      tips:[
+        {msg:'宝贝喜欢燕麦黄桃味的安慕希'},
+        {msg:'宝贝不喜欢香菜'},
+        {msg:'宝贝吃鱼腥草会胃痛'},
+        {msg:'宝贝喜欢灰色的垂耳兔'},
+        {msg:'宝贝喜欢柴犬'},
+        {msg:'宝贝肝肾不好，得注意她的饮食'},
+        {msg:'宝贝不喜欢榴莲'},
+        {msg:'宝贝喜欢抹茶'},
+        {msg:'宝贝看电影喜欢坐左边'},
+      ],
       //swiper
       swiper_index: 0,
       //masker
       maskerList: [{
-        title: '那个周一，我们在一起了',
+        title: '那天你来我家，我们时隔十年再次相遇了',
         img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
-        time:'2019-06-03'
+        time:'2019-05-25'
       }, {
-        title: '美容用品 & 日用品（上）',
+        title: '我们聊得很投缘，那个周一，我们在一起了',
         img: 'https://i.postimg.cc/W4k5vhQg/25dbd3e6f50e44fb1946e82db560824.jpg',
         time:'2019-06-03'
       }, {
-        title: '远离车内毒气，日本车载空气净化器精选',
+        title: '端午节，你回杭州，那三天真的很开心，但你的牙，真的很菜哦，hhh',
         img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
-        time:'2019-06-03'
-      }]
+        time:'2019-06-07'
+      }, {
+        title: '那是我第一次去你的学校陪你，你在车站送我回去的时候，我真的很不舍得你',
+        img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
+        time:'2019-06-16'
+      },{
+        title: '你终于放暑假啦！那是我们第一次一起做陶瓷',
+        img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
+        time:'2019-07-06'
+      }, {
+        title: '这是我们第一次去旅行哦，南京之旅真的很不错（忽略哥老关）',
+        img: 'https://i.postimg.cc/W4k5vhQg/25dbd3e6f50e44fb1946e82db560824.jpg',
+        time:'2019-07-12'
+      }, {
+        title: '端午节，你回杭州，那三天真的很开心，但你的牙，真的很菜哦，hhh',
+        img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
+        time:'2019-06-07'
+      }, {
+        title: '那是我第一次去你的学校陪你，你在车站送我回去的时候，我真的很不舍得你',
+        img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
+        time:'2019-06-16'
+      }
+      ]
     }
   }
 }
