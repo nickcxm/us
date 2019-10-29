@@ -4,7 +4,7 @@
       <!--<x-header style="background-color:#9acdeb;" :left-options="{showBack: false}">橙子之家</x-header>-->
       <div  class="container">
         <div class="backgroundImageFilter"></div>
-        <h2 style="color: blanchedalmond">CXM & CH♥</h2>
+        <h2 style="color: blanchedalmond">CXM ♥ CH</h2>
         <!--<h3 style="color: blanchedalmond">程旭敏 & 程慧</h3>-->
       </div>
       <marquee>
@@ -30,8 +30,8 @@
       <!--<img slot="header" src="http://placeholder.qiniudn.com/640x300" style="width:100%;display:block;">-->
       <div slot="content" class="card-padding">
         <p style="color:#999;font-size:12px;">虽然我不怎么懂浪漫、脾气也很不好，反正缺点真的挺多的</p>
-        <p style="font-size:14px;line-height:1.2;">但这辈子，我想一直和你在一起，宝贝20岁生日快乐~往后余生，我会为你而改变，慢慢学着浪漫起来，慢慢改改自己的脾气，我也相信你会跟我一起努力，咱们以后一定要变得很有钱hhh，一定会一直幸福下去的。</p>
-        <p style="color:#999;font-size:12px;margin-left: 57%">---送给我的宝贝</p>
+        <p style="font-size:14px;line-height:1.2;">但这辈子，我想一直和你在一起，往后余生，我会为你而改变，慢慢学着浪漫起来，慢慢改改自己的脾气，我也相信你会跟我一起努力，咱们以后一定要变得很有钱hhh，一定会一直幸福下去的。宝贝20岁生日快乐~</p>
+        <p style="color:#999;font-size:12px;margin-left: 57%">---To: 程慧小宝贝</p>
       </div>
       <div v-transfer-dom>
         <previewer :list="list" ref="previewer" :options="options" @on-index-change="logIndexChange"></previewer>
@@ -195,7 +195,7 @@ export default {
 }
 .backgroundImageFilter {
   position: absolute;
-  background-image: url('https://i.postimg.cc/BnymkxwJ/20191028154007.jpg');
+  background-image: url('https://i.postimg.cc/Z5FFjDDN/f37931a26309b94c4dd14fdd35e2aff.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
