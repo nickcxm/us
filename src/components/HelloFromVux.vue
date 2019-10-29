@@ -8,7 +8,7 @@
         <!--<h3 style="color: blanchedalmond">程旭敏 & 程慧</h3>-->
       </div>
       <marquee>
-        <marquee-item v-for="i in tips" :key="i" @click.native="onClick(i)" class="align-middle">{{i.msg}}</marquee-item>
+        <marquee-item v-for="i in tips" :key="i.msg" @click.native="onClick(i)" class="align-middle">{{i.msg}}</marquee-item>
       </marquee>
       <divider>距离一周年还有:</divider>
       <div>
@@ -25,17 +25,29 @@
         </div>
       </masker>
     </div>
-    <div style="margin-left: 10%;margin-right: 10%">
-      <img class="previewer-demo-img" v-for="(item, index) in list" :src="item.src" width="100" @click="show(index)">
+
+    <card>
+      <!--<img slot="header" src="http://placeholder.qiniudn.com/640x300" style="width:100%;display:block;">-->
+      <div slot="content" class="card-padding">
+        <p style="color:#999;font-size:12px;">虽然我不怎么懂浪漫、脾气也很不好，反正缺点真的挺多的</p>
+        <p style="font-size:14px;line-height:1.2;">但这辈子，我想一直和你在一起，宝贝20岁生日快乐~往后余生，我会为你而改变，慢慢学着浪漫起来，慢慢改改自己的脾气，我也相信你会跟我一起努力，咱们以后一定要变得很有钱hhh，一定会一直幸福下去的。</p>
+        <p style="color:#999;font-size:12px;margin-left: 57%">---送给我的宝贝</p>
+      </div>
       <div v-transfer-dom>
         <previewer :list="list" ref="previewer" :options="options" @on-index-change="logIndexChange"></previewer>
       </div>
-    </div>
+    </card>
+    <!--<div style="margin-left: 10%;margin-right: 10%">-->
+      <!--<img class="previewer-demo-img" v-for="(item, index) in list" :src="item.src" width="100" @click="show(index)">-->
+      <!--<div v-transfer-dom>-->
+        <!--<previewer :list="list" ref="previewer" :options="options" @on-index-change="logIndexChange"></previewer>-->
+      <!--</div>-->
+    <!--</div>-->
   </div>
 </template>
 
 <script>
-import { Group, Cell,XHeader,Clocker,Marquee, MarqueeItem, Divider,Previewer,TransferDom,Swiper,Masker} from 'vux'
+import { Group, Cell,XHeader,Clocker,Marquee, MarqueeItem, Divider,Previewer,TransferDom,Swiper,Masker,Card} from 'vux'
 
 export default {
   directives: {
@@ -51,7 +63,8 @@ export default {
     Divider,
     Previewer,
     Swiper,
-    Masker
+    Masker,
+    Card,
   },
   mounted () {
     setTimeout(() => {
@@ -233,5 +246,8 @@ export default {
   border-top: 1px solid #f0f0f0;
   display: inline-block;
   margin-top: 5px;
+}
+.card-padding {
+  padding: 35px;
 }
 </style>
