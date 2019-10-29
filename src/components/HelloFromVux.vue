@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import { Group, Cell,XHeader,Clocker,Marquee, MarqueeItem, Divider,Previewer,TransferDom,Swiper,Masker,Card} from 'vux'
+import {Scroller,Group, Cell,XHeader,Clocker,Marquee, MarqueeItem, Divider,Previewer,TransferDom,Swiper,Masker,Card} from 'vux'
 
 export default {
   directives: {
@@ -65,6 +65,7 @@ export default {
     Swiper,
     Masker,
     Card,
+    Scroller,
   },
   mounted () {
     setTimeout(() => {
@@ -144,7 +145,7 @@ export default {
         time:'2019-05-25'
       }, {
         title: '我们聊得很投缘，那个周一，我们在一起了',
-        img: 'https://i.postimg.cc/W4k5vhQg/25dbd3e6f50e44fb1946e82db560824.jpg',
+        img: 'https://i.postimg.cc/zByHdMHD/20191029175645.jpg',
         time:'2019-06-03'
       }, {
         title: '端午节，你回杭州，那三天真的很开心，但你的牙，真的很菜哦，hhh',
