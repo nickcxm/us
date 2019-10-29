@@ -26,23 +26,20 @@
       </masker>
     </div>
 
+    <!--<div style="margin-left: 10%;margin-right: 10%">-->
+      <!--<img class="previewer-demo-img" v-for="(item, index) in list" :src="item.img" width="100" @click="show(index)">-->
+      <!--<div v-transfer-dom>-->
+        <!--<previewer :list="maskerList" ref="previewer" :options="options" @on-index-change="logIndexChange"></previewer>-->
+      <!--</div>-->
+    <!--</div>-->
+
     <card>
-      <!--<img slot="header" src="http://placeholder.qiniudn.com/640x300" style="width:100%;display:block;">-->
       <div slot="content" class="card-padding">
         <p style="color:#999;font-size:12px;">虽然我不怎么懂浪漫、脾气也很不好，反正缺点真的挺多的</p>
         <p style="font-size:14px;line-height:1.2;">但这辈子，我想一直和你在一起，往后余生，我会为你而改变，慢慢学着浪漫起来，慢慢改改自己的脾气，我也相信你会跟我一起努力，咱们以后一定要变得很有钱hhh，一定会一直幸福下去的。宝贝20岁生日快乐~</p>
         <p style="color:#999;font-size:12px;margin-left: 57%">---To: 程慧小宝贝</p>
       </div>
-      <div v-transfer-dom>
-        <previewer :list="list" ref="previewer" :options="options" @on-index-change="logIndexChange"></previewer>
-      </div>
     </card>
-    <!--<div style="margin-left: 10%;margin-right: 10%">-->
-      <!--<img class="previewer-demo-img" v-for="(item, index) in list" :src="item.src" width="100" @click="show(index)">-->
-      <!--<div v-transfer-dom>-->
-        <!--<previewer :list="list" ref="previewer" :options="options" @on-index-change="logIndexChange"></previewer>-->
-      <!--</div>-->
-    <!--</div>-->
   </div>
 </template>
 
@@ -141,7 +138,8 @@ export default {
       //masker
       maskerList: [{
         title: '那天你来我家，我们时隔十年再次相遇了',
-        img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
+        img: 'https://i.postimg.cc/TYksWNv2/20191029202214.jpg',
+        msrc: 'https://i.postimg.cc/bstg7Tv4/20191029202214.jpg',
         time:'2019-05-25'
       }, {
         title: '我们聊得很投缘，那个周一，我们在一起了',
@@ -153,24 +151,45 @@ export default {
         time:'2019-06-07'
       }, {
         title: '那是我第一次去你的学校陪你，你在车站送我回去的时候，我真的很不舍得你',
-        img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
+        img: 'https://i.postimg.cc/FHdTk9xG/20191029202716.jpg',
         time:'2019-06-16'
       },{
         title: '你终于放暑假啦！那是我们第一次一起做陶瓷',
-        img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
+        img: 'https://i.postimg.cc/66McH7jY/20191029202956.jpg',
         time:'2019-07-06'
       }, {
         title: '这是我们第一次去旅行哦，南京之旅真的很不错（忽略哥老关）',
-        img: 'https://i.postimg.cc/W4k5vhQg/25dbd3e6f50e44fb1946e82db560824.jpg',
+        img: 'https://i.postimg.cc/qvDd4MvL/20191029201931.jpg',
         time:'2019-07-12'
       }, {
-        title: '端午节，你回杭州，那三天真的很开心，但你的牙，真的很菜哦，hhh',
-        img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
-        time:'2019-06-07'
+        title: '在一起两个月的时候，我们一起去了杭州乐园，那天知道了宝贝还晕这些东西，小菜鸡',
+        img: 'https://i.postimg.cc/GhYQbM3S/20191029203820.jpg',
+        time:'2019-08-03'
       }, {
-        title: '那是我第一次去你的学校陪你，你在车站送我回去的时候，我真的很不舍得你',
-        img: 'https://i.postimg.cc/VJq9bb8h/20191028154007.jpg',
-        time:'2019-06-16'
+        title: '那天我们和俊峰还有佳美一起去撸猫，体会到了抱猫咪真的很难',
+        img: 'https://i.postimg.cc/QdBG0Zjn/20191029204039.jpg',
+        time:'2019-08-25'
+      }, {
+        title: '我们拥有了自己的小甜橙，那天真的很佩服你，因为你，我们才能有这么可爱的猫咪',
+        img: 'https://i.postimg.cc/KcNDsKzR/20191029204635.jpg',
+        time:'2019-08-30'
+      },
+        {
+        title: '在一起100天了，我们互相发了很长的话，你就是我的唯一',
+        img: 'https://i.postimg.cc/W4k5vhQg/25dbd3e6f50e44fb1946e82db560824.jpg',
+        time:'2019-09-10'
+      }, {
+        title: '这是我第一次带你回家吃饭，宝贝还是很羞涩的hhh，我们还一起和小甜橙去打针',
+        img: 'https://i.postimg.cc/9fCGpChG/20191029205154.jpg',
+        time:'2019-09-14'
+      }, {
+        title: '在上海，我们一起去了海洋馆和动物世界，给你拍照的时候，觉得你真的好美',
+        img: 'https://i.postimg.cc/0Q3MLqLX/20191029205422.jpg',
+        time:'2019-10-04'
+      }, {
+        title: '啊哈，和宝贝在嘉兴玩了三天。晚上逛超市的时候真的好欢乐hhhh',
+        img: 'https://i.postimg.cc/tC6mT3N7/20191029205650.jpg',
+        time:'2019-10-25'
       }
       ]
     }
@@ -196,7 +215,7 @@ export default {
 }
 .backgroundImageFilter {
   position: absolute;
-  background-image: url('https://i.postimg.cc/Z5FFjDDN/f37931a26309b94c4dd14fdd35e2aff.jpg');
+  background-image: url('https://i.postimg.cc/qvDd4MvL/20191029201931.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
