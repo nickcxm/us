@@ -138,7 +138,8 @@ export default {
       //masker
       maskerList: [{
         title: '那天你来我家，我们时隔十年再次相遇了',
-        img: 'https://i.postimg.cc/TYksWNv2/20191029202214.jpg',
+        // img: 'https://i.postimg.cc/TYksWNv2/20191029202214.jpg',
+        img: 'https://i.postimg.cc/qRpL2q6V/20191030153018.jpg',
         msrc: 'https://i.postimg.cc/bstg7Tv4/20191029202214.jpg',
         time:'2019-05-25'
       }, {
